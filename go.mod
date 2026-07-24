@@ -1,6 +1,8 @@
 module github.com/gmcabrita/go-slice-len-analyzer
 
-go 1.26.0
+go 1.25.0
+
+toolchain go1.26.5
 
 require golang.org/x/tools v0.42.0
 
