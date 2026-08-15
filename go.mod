@@ -1,4 +1,4 @@
-module github.com/gmcabrita/go-slice-len-analyzer
+module github.com/gmcabrita/slicelen
 
 go 1.25.0
 

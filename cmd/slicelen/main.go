@@ -2,7 +2,7 @@
 package main
 
 import (
-	slicelen "github.com/gmcabrita/go-slice-len-analyzer"
+	"github.com/gmcabrita/slicelen"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

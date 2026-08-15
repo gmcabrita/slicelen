@@ -1,4 +1,4 @@
-# go-slice-len-analyzer
+# slicelen
 
 A focused [`go/analysis`](https://pkg.go.dev/golang.org/x/tools/go/analysis) analyzer that reports indexing a slice or array with its own length:
 
@@ -15,13 +15,13 @@ It intentionally does not perform general bounds or fencepost analysis. Expressi
 Run it directly from the target project's root:
 
 ```sh
-go run github.com/gmcabrita/go-slice-len-analyzer/cmd/slicelen@latest ./...
+go run github.com/gmcabrita/slicelen/cmd/slicelen@latest ./...
 ```
 
 Alternatively, install the command and reuse it across projects:
 
 ```sh
-go install github.com/gmcabrita/go-slice-len-analyzer/cmd/slicelen@latest
+go install github.com/gmcabrita/slicelen/cmd/slicelen@latest
 cd /path/to/project
 slicelen ./...
 ```
@@ -36,7 +36,7 @@ The exported `slicelen.Analyzer` can be included in a custom multi-analyzer driv
 package main
 
 import (
-	"github.com/gmcabrita/go-slice-len-analyzer"
+	"github.com/gmcabrita/slicelen"
 	"golang.org/x/tools/go/analysis/multichecker"
 )
 
